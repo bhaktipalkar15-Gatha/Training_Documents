@@ -791,3 +791,33 @@ Day 3: 4th Dec. 2025
 	
 	
 	- Lab Requirement:
+	
+	Pre-requisites :
+
+		- Create GitHub Account 
+			https://github.com/
+		
+			- Active Email_ID		
+		
+		- AWS Cloud Platform:
+		
+			https://aws.amazon.com/console/
+			
+			- Create Free Tier Account - Valid for 12 Months
+				https://aws.amazon.com/resources/create-account/
+				
+				https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html
+			
+				- Active Email_ID
+				- Active Mobile_Number
+				- Active Credit/Debit Card(Enabled with International Transaction)
+				
+				- PAN Number
+		
+		- Create DockerHub Account: 
+			https://hub.docker.com/
+			
+			- Active Email_ID		
+
+		- Install Visual Studio Code IDE on Local Machine:
+			https://code.visualstudio.com/download
