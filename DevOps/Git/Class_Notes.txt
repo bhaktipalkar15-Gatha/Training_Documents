@@ -212,4 +212,318 @@ Next :::
 		git init 
 		
 		git cli command 
-							
+
+					
+					
+######################
+Day 10: 16th Dec. 2025
+######################					
+			
+	Working with Local repository :	
+
+
+	Working Directory				Staging/Index_Area 					Local Repository	
+	
+		file.txt     ------------->  	file.txt	   --------------->  	file.txt 
+						git add 						  git commit 					
+
+
+	Create/Initialize git repository :::
+
+	Local Machine:																		
+	
+	Install git client:	
+	
+
+	Open Terminal/git bash :
+	
+	git --version 
+	
+	Create a Project Directory :::
+	
+		- cd d: 
+		
+		- mkdir PL-DevOps-A1125
+		
+		- cd PL-DevOps-A1125
+		
+		- mkdir repo1 
+
+		- cd repo1
+		
+		- git init 	
+			
+	
+	Setup the Git Configuration :::	Just for first time!	
+	
+		git config --global user.name "Loksai"
+		
+		git config --global user.email "Loksai@asdf.com"
+		
+		echo "rec1" >> file.txt 
+		
+		git add file1.txt 
+		
+		git commit -m "Created file1.txt"
+		
+	
+	git status 					# Get the current status of the repository
+
+	ls 							# Linux Command 
+	
+	git ls-files 				# Git Cli Command to get the list of files/Dirs. that are being tracked by git.
+
+
+	git add :::
+	
+		git add <file1.txt> <file2.txt>		
+		
+		git add file1.txt 
+	
+		git add file1.txt file2.txt 
+		
+		git add *.java 
+	
+		git add *.java s1.txt
+		
+		git add .				# '.' denotes all the files/Changes  
+		
+		
+	git log :::					# To get the Commit History
+	
+		Syntax: 
+		
+			git log 
+			
+			git log --oneline 	# Short Commit Details
+	
+			git log -2 
+			
+			git log --oneline -2 
+			
+
+	git show <commit_id>
+	
+	git show -2 	
+	
+	Unstage :::
+	
+		git rm --cached e1.html		# To Unstage the file - take the changes back to working directory
+		
+		git rm -f e1.html			# To Unstage the file - permanently remove from staging area & Working Directory
+		
+		
+	git commit :::
+	
+		git commit -m <Commit_Message>			# Enter valid Commit Message.
+		
+		Eg.: 
+		
+			git commit -m "Created File.txt"		
+		
+			git commit -m "CR1001 - Created File.txt"
+
+			git commit -m "Rel-0126 - Modified payment.java"
+
+
+
+	GITIGNORE :::::
+	
+		- It is used to ignore the file from tracking!
+	
+		- Create .gitignore file & maintain the file names to be ignored 
+		
+		- As a best practise, .gitignore should be the very first commit in any repository.
+		
+		
+		
+	Project:
+	
+	Working Dir. 							staging_Area
+	
+	Java_Web_App_Project		---> add 	--->		commit ---> 	push	==> Remote Repos.
+		src 
+			*.java 
+			*.java 
+		test 
+			*.java 
+			*.java 
+		app.properties
+		DB_UserName
+		DB_Password
+		secrets
+
+
+  504  cd d:
+  505  clear
+  506  pwd
+  507  mkdir PL-DevOps-A1125
+  508  cd PL-DevOps-A1125
+  509  pwd
+  510  mkdir repo1
+  511  cd repo1/
+  512  clear
+  513  pwd
+  514  git init
+  515  ls
+  516  ls -a
+  517  cd .git/
+  518  cd ..
+  519  cd .git/
+  520  pwd
+  521  ls
+  522  cd ..
+  523  git status
+  524  echo "rec1" >> file1.txt
+  525  ls
+  526  git status
+  527  ls
+  528  cat file1.txt
+  529  git ls-files
+  530  git add file1.txt
+  531  git status
+  532  ls
+  533  git ls-files
+  534  git commit -m "Created file1.txt"
+  535  git status
+  536  git log
+  537  git status
+  538  clear
+  539  cd ..
+  540  pwd
+  541  ls
+  542  mkdir repo2
+  543  cd repo2/
+  544  git init
+  545  git status
+  546  ls
+  547  echo "rec1" >> f1.txt
+  548  ls
+  549  git ls-files
+  550  git status
+  551  git add f1.txt
+  552  git status
+  553  git commit -m "Created f1.txt"
+  554  git log
+  555  git config --global user.name "Loksai"
+  556  echo "rec1" >> f2.txt
+  557  git add f2.txt
+  558  git commit -m "Created f2.txt"
+  559  git log
+  560  clear
+  561  cd .git/
+  562  ls
+  563  cd ..
+  564  clear
+  565  ls
+  566  git status
+  567  git ls-files
+  568  git log
+  569  clear
+  570  ls
+  571  git status
+  572  echo "rec1" >> f1.txt
+  573  git status
+  574  echo "Rec1" >> s1.txt
+  575  git status
+  576  git add f1.txt
+  577  git status
+  578  git commit -m "Updated f1.txt"
+  579  git status
+  580  echo "rec1" >> s2.txt
+  581  echo "rec1" >> s3.txt
+  582  echo "rec1" >> s4.txt
+  583  echo "rec1" >> l1.java
+  584  echo "rec1" >> l2.java
+  585  echo "rec1" >> l3.java
+  586  echo "rec1" >> e1.html
+  587  echo "rec1" >> e2.html
+  588  echo "rec1" >> e3.html
+  589  echo "rec1" >> q1.doc
+  590  echo "rec1" >> q2.doc
+  591  echo "rec1" >> q3.doc
+  592  ls
+  593  git ls-files
+  594  git status
+  595  git add e1.html
+  596  git status
+  597  git add e2.html q1.doc s1.txt
+  598  git status
+  599  git add *.java
+  600  git statu
+  601  git status
+  602  git add .
+  603  git status
+  604  git log
+  605  clear
+  606  git log
+  607  git log --oneline
+  608  git log --oneline -1
+  609  git log --oneline -2
+  610  git log -2
+  611  git log -1
+  612  git log --oneline
+  613  git show 3b9f227
+  614  git show -1
+  615  git show -2
+  616  clear
+  617  git status
+  618  git rm --cached e1.html
+  619  git status
+  620  git rm -f e2.html
+  621  git status
+  622  ls
+  623  git status
+  624  git add .
+  625  git commit -m "Created some files"
+  626  git status
+  627  git log
+  628  clear
+  629  git log --oneline
+  630  git show ba0f94f
+  631  clear
+  632  git show ba0f94f
+  633  clear
+  634  git log --oneline
+  635  git show ba0f94f
+  636  clear
+  637  git log --oneline
+  638  git show 3b9f227
+  639  git log
+  640  git log --oneline
+  641  git log 2573d6e
+  642  git log f1.txt
+  643  git show f1.txt
+  644  clear
+  645  git log --oneline
+  646  cd ..
+  647  ls
+  648  mkdir repo3
+  649  cd repo3/
+  650  clear
+  651  git init
+  652  git status
+  653  ls -a
+  654  ls
+  655  vi .gitignore
+  656  cat .gitignore
+  657  git add .
+  658  git commit -m "Initial Commit for .gitignore"
+  659  git status
+  660  ls
+  661  ls -a
+  662  cat .gitignore
+  663  ls
+  664  echo "rec1" >> s1.java
+  665  git status
+  666  echo "rec1" >> sample.txt
+  667  ls
+  668  git status
+  669  git add .
+  670  git status
+  671  git commit -m "created s1.txt"
+  672  git status
+  673  ls
+  674  git ls-files
+  675  git status
+  676  history
